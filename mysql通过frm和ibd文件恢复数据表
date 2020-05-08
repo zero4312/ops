@@ -1,0 +1,11 @@
+备份表的ibd文件
+手动删除文件夹内 错误的表
+刷新表列表 
+执行mysqladmin flush-tables
+导入正确的表结构 或手动创建表
+分离空间 alter table songlyric discard tablespace;
+关闭mysql 
+copy回ibd文件
+chown更改copy回的文件权限为mysql:mysql
+启动mysql
+关联空间 alter table songlyric import tablespace;
